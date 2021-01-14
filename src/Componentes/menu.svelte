@@ -9,6 +9,8 @@
             console.log(res)
             if(res.data == 'success'){
                 localStorage.removeItem('token');
+                localStorage.removeItem('user');
+                localStorage.removeItem('foto');
                 token.set(0)
                 push('/');
             }
